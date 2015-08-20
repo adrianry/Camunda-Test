@@ -15,7 +15,8 @@ public class Methodenaufruf implements JavaDelegate {
 	    	String inputFeld = (String)InputFeld.getValue(execution);
 	    	
 	    	 LOGGER.info("\n\n\n Klasse Methodenaufruf meldet: " + inputFeld +"\n\n\n");
-	    			 
+	    		
+	    	execution.setVariable("inputFeld", inputFeld);
 	    			 
 	    } catch (Exception ex) {
 	       // throw new BpmnError();
