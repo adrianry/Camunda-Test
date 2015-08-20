@@ -1,4 +1,4 @@
-package org.camunda.bpm.getstarted.loanapproval;
+package org.camunda.bpm.getstarted.adisample;
 
 import java.util.logging.Logger;
 

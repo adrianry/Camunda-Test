@@ -11,7 +11,7 @@
  * limitations under the License.
  */
 
-package org.camunda.bpm.getstarted.loanapproval;
+package org.camunda.bpm.getstarted.adisample;
 
 import org.camunda.bpm.application.ProcessApplication;
 import org.camunda.bpm.application.impl.ServletProcessApplication;

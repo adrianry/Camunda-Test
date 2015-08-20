@@ -4,13 +4,13 @@
     <bpmn2:startEvent id="StartEvent_1" name="Start">
       <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:serviceTask id="ServiceTask_1" camunda:class="org.camunda.bpm.getstarted.loanapproval.ProcessRequestDelegate" name="Schreibe Variable">
+    <bpmn2:serviceTask id="ServiceTask_1" camunda:class="org.camunda.bpm.getstarted.adisample.ProcessRequestDelegate" name="Schreibe Variable">
       <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_3</bpmn2:outgoing>
     </bpmn2:serviceTask>
     <bpmn2:sequenceFlow id="SequenceFlow_1" name="" sourceRef="StartEvent_1" targetRef="ServiceTask_1"/>
     <bpmn2:sequenceFlow id="SequenceFlow_3" name="" sourceRef="ServiceTask_1" targetRef="ServiceTask_2"/>
-    <bpmn2:serviceTask id="ServiceTask_2" camunda:class="org.camunda.bpm.getstarted.loanapproval.Delegate2" name="Lese Variable">
+    <bpmn2:serviceTask id="ServiceTask_2" camunda:class="org.camunda.bpm.getstarted.adisample.Delegate2" name="Lese Variable">
       <bpmn2:incoming>SequenceFlow_3</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
     </bpmn2:serviceTask>
@@ -33,12 +33,12 @@
     <bpmn2:endEvent id="EndEvent_1" name="Ende">
       <bpmn2:incoming>SequenceFlow_12</bpmn2:incoming>
     </bpmn2:endEvent>
-    <bpmn2:userTask id="UserTask_2" camunda:formKey="gui-wf-01" camunda:assignee="demo" name="GUI Task">
+    <bpmn2:userTask id="UserTask_2" camunda:formKey="gui-wf-01" camunda:assignee="adrian" name="GUI Task">
       <bpmn2:incoming>SequenceFlow_4</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_11</bpmn2:outgoing>
     </bpmn2:userTask>
     <bpmn2:sequenceFlow id="SequenceFlow_11" name="" sourceRef="UserTask_2" targetRef="ExclusiveGateway_2"/>
-    <bpmn2:serviceTask id="ServiceTask_3" camunda:class="org.camunda.bpm.getstarted.loanapproval.Methodenaufruf" name="Rufe Methode mit Rückgabewert">
+    <bpmn2:serviceTask id="ServiceTask_3" camunda:class="org.camunda.bpm.getstarted.adisample.Methodenaufruf" name="Rufe Methode mit Rückgabewert">
       <bpmn2:extensionElements>
         <camunda:field name="InputFeld">
           <camunda:string>Ich bin das Feld.</camunda:string>
